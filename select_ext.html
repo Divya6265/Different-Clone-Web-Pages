@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            select{
+                border: none;
+                padding: 10px 45px 10px 10px;
+                display: flex;
+                flex: 1;
+                outline: none;
+                font-weight:600;
+                cursor: pointer;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .select{
+                border:1px solid gray;
+                width: 200px;
+                background-color: aqua;
+                display: flex;
+                position: relative;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .select::after{
+                content: '\25BC';
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 10px;
+                pointer-events: none;
+                background-color: white;
+            }
+            .select:hover::after{
+                color: rgb(142, 142, 8);
+            }
+           
+            
+        </style>
+    </head>
+    <body>
+        <div class="select">
+            <select>
+                <option value="Select Options">Select Options</option>
+                <option value="Banana">Banana</option>
+                <option value="Apple">Apple</option>
+                <option value="Mango">Mango</option>
+            </select>
+        </div>
+    </body>
+</html>
